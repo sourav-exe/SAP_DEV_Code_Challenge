@@ -5,6 +5,10 @@ CLASS zcl_week_1 DEFINITION
 
   PUBLIC SECTION.
 
+    DATA: gao_output TYPE REF TO if_oo_adt_classrun_out.
+
+    INTERFACES: if_oo_adt_classrun.
+
     METHODS: display IMPORTING iv_display TYPE abap_bool DEFAULT 'X'.
   PROTECTED SECTION.
     METHODS: display_hello_world.
@@ -15,8 +19,7 @@ ENDCLASS.
 
 CLASS zcl_week_1 IMPLEMENTATION.
   METHOD display_hello_world.
-    cl_demo_output=>display( 'Hello World From India' ).
-    DATA(dd) = abap_true.
+    gao_output->write( 'Hello World From India' ).
   ENDMETHOD.
 
   METHOD display.
@@ -25,4 +28,10 @@ CLASS zcl_week_1 IMPLEMENTATION.
     ENDIF.
   ENDMETHOD.
 
+  METHOD if_oo_adt_classrun~main.
+    gao_output = out.
+    display(  ).
+  ENDMETHOD.
+
 ENDCLASS.
+
