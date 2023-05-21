@@ -19,3 +19,9 @@ SAP Developer Code Challenge – Open-Source ABAP
 >For this week’s challenge, those who have not yet installed abapGit, the challenge is to install abapGit, create a very simple “Hello World” class, and simply push your development object to your GitHub repository.  
 
 [Week 1 Challenge](https://groups.community.sap.com/t5/application-development/sap-developer-code-challenge-open-source-abap-week-1/m-p/259306#M1284)
+
+### Week 2 Challenge
+
+>For this weeks’ challenge, install the ABAP2IU5 project in your system, and create a program using ABAP2UI5, which throws an input screen with two fields (User and Date), and a button.  When the post button is clicked it should send the values to the server.  
+
+[Week 2 Challenge](https://groups.community.sap.com/t5/application-development/sap-developer-code-challenge-open-source-abap-week-2/m-p/260727#M1372)
